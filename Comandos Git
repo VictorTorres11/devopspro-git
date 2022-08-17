@@ -1,0 +1,22 @@
+Configurações básicas inicias Git :
+  - git config --list
+  - git config --global user.name "victor.ribeiro"
+  - git config --global user.email "victor01_@hotmail.com.br"
+  - git config --global core.editor vscode
+  - git config --global init.defaultBranch main
+  - git config --list
+  - git config --system (nível de sistema e indepdente do usuário que logar na máquina vai pegar esses dados)
+  
+  
+Comandos usuais:
+  - git init
+    Iniciar um repositório na pasta local
+  - git status 
+    Verificar status do repositório atualmente
+  - git add .
+    Adicionar arquivos para commit (tracked file)
+  - git reset
+    Remove arquivos que estavam para fazer commit (untracked file)
+  - git commit -m ""
+    Fazendo commit pata subir ao repositório
+  - 
