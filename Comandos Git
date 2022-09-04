@@ -17,6 +17,49 @@ Comandos usuais:
     Adicionar arquivos para commit (tracked file)
   - git reset
     Remove arquivos que estavam para fazer commit (untracked file)
-  - git commit -m ""
-    Fazendo commit pata subir ao repositório
+  - git commit -m "Mensagem"
+    Fazendo commit para subir ao repositório
+  - git commit -a -m "Mensagem"
+    Fazendo commit para subir ao repositório sem a necessidade de usar o git add
+  - git log
+    Log dos commits realizados
+  - git log -p arquivo.txt
+    Mostra as alterações ocorridas em um arquivo específico
+  - git checkout (hash)
+    Volta para um commit anterior atualizando os arquivos para os commitados naquela vez
+  - git checkout main
+    Volta para a branch main do repositório e atualiza os arquivos
+  - git reset --soft HEAD~1
+    Realiza o rollback do último commit mas mantêm as alterações feitas em untracked
+  - git reset --hard
+    Realiza o rollback do último commit e volta os arquivos do commit anterior
+
+Branchs:
+  - git branch feature/novo_arquivo
+    Criação de uma nova branch com o nome feature/novo_arquivo
+  - git branch
+    Listagem de todas as branches disponíveis no repositório
+  - git branch -m "name"
+  
+  - git branch -d name
+    Deletar branch utilizada caso a branch ainda não tenha sido mergeada deve ser utilizado -D
+  - git checkout -b feature/arquivo_xpto
+    cria a branch e troca para a nova branch automáticamente
+  - git merge feature/arquivo_xpto
+    efetuar merge da branch feature para a main
+  - git rebase feature/arquivo_xpto
+    Efetua rebase da branch feature para a main não deixa o log de merge, apenas coloca na linha do tempo a branch e carrega todo o histórico.
+  - git cherry-pick <hash>
+    Pega o commit de outra branch e unifica ao seu commit de outra branch para trabalhar em um hotfix por exemplo.
+  - git tag
+    Listagem de todas as tags criadas
+  - git tag -a v2.0 -m "<Mensagem>"
+    Criação de tag na branch situada atualmente no git com o nome v2.0 e mensagem a definir
   - 
+  
+  
+.gitignore:
+  Utilizado para ignorar na hora do commit certos arquivos como log, arquivos de teste, execução entre outros... serve para evitar excesso de envios ao repositório e utilização de disco de forma desnecessária.
+  ex .gitignore:
+*.log
+
