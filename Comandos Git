@@ -55,7 +55,21 @@ Branchs:
     Listagem de todas as tags criadas
   - git tag -a v2.0 -m "<Mensagem>"
     Criação de tag na branch situada atualmente no git com o nome v2.0 e mensagem a definir
-  - 
+  - git show v2.0
+    Mostrar as informações a respeito da tag v2.0
+  - git tag -d v2.0
+    Remove a tag definida como v2.0
+  - git remote add origin git@<link repo>
+    Adicionar o link do git remoto a um repositório já existente
+  - git push -u origin main
+    Subindo todos os arquivos do repositório da origem main para o git remoto, o comando -u cria um vínculo.
+  - git branch -M main
+    Renomeio a branch atual para main
+  - git push --set-upstream origin novabranch
+    Fazendo uma associação da branch local com uma remota para conseguir subir para o repositório remoto
+  - git pull
+    Verifica se existe alterações remotas não atulizadas no repositório local e ajusta se necessário
+  
   
   
 .gitignore:
