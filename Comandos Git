@@ -6,6 +6,11 @@ Configurações básicas inicias Git :
   - git config --global init.defaultBranch main
   - git config --list
   - git config --system (nível de sistema e indepdente do usuário que logar na máquina vai pegar esses dados)
+  - git config pull.rebase false
+    Desativar rebase automático
+  - git config pull.merge true
+    Ativa merge automático em caso de conflitos
+    
   
   
 Comandos usuais:
