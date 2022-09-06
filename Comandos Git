@@ -74,6 +74,10 @@ Branchs:
     Fazendo uma associação da branch local com uma remota para conseguir subir para o repositório remoto
   - git pull
     Verifica se existe alterações remotas não atulizadas no repositório local e ajusta se necessário
+  - git fetch origin
+    Sobe atualizações do repositório remoto na sua máquina
+  - git diff main origin/main
+    Verificar diferenças entre branch main com a main remota
   
   
   
