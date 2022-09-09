@@ -1,0 +1,35 @@
+- uname
+  Retorna o nome do Kernel
+- uname -s
+  Printa o nome do Kernel
+- uname -n
+  Printa o nome de usuário da máquina
+- uname -r
+  Printa o release do Kernel
+- uname -v
+  Informa versão do Kernel
+- uname -m
+  Nome do Hardware
+- uname -p
+  Tipo de processador
+- uname -i
+  Plataforma do Hardware
+- uname -o
+  Sistema operacional
+- uname -a
+  Todos os detalhes acimas juntos
+- clear
+  Limpa todo o console e os comandos digitados
+- sudo
+  Executar comando com a utilização de um super usuário
+- sudo su
+  Loga como root no terminal
+- who
+  Informações do usuário logado no sistema operacional
+- free
+  Informações de consumo e uso de memória, utilizado e livre(memória swap).
+- shutdown (-r faz o reebot) now (agora)
+  Desligar a máquina
+- man
+  abre o manual do comando ou recurso que você gostaria de utilizado (EX: man sudo)
+- 
